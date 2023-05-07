@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 import os
 
+
 # Read the credentials from "pw.txt"
 # If you don't already, you must create a pw.txt in the same directory as this script for it to run.
 filename = "pw.txt"

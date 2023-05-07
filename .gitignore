@@ -4,6 +4,7 @@
 # Sensitive info files
 data.csv
 pw.txt
+tst_pw.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
