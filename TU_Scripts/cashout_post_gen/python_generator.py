@@ -57,7 +57,7 @@ for index, row in df.iterrows():
         decoration = ''.join((decoration, (heart * 3)))
 
         # Formatting the string, and adding it to the final list
-    message = f'**{username}** has cashed out **${pv_amount}** on {time}!! Winning ${cash_amount} in cash and donating ${charity_amount} to charity!{decoration}'
+    message = f'**{username}** has cashed out **${pv_amount}** on {time}!! Winning ${cash_amount} in cash and donating ${charity_amount}({pct_char}%) to charity!{decoration}'
 
     output_str += f'{message}\n\n'
 
