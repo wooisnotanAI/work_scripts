@@ -1,3 +1,5 @@
+# This is not a functional / runnable code, this is a notebook.
+
 from selenium.webdriver.common.by import By
 
 # Locate an element by ID
@@ -38,3 +40,34 @@ element_text = element.text
 
 
 # So then the basics are locating elements, then interacting with them.
+############# new section ####
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome()
+driver.get("https://www.example.com")
+
+# 1. By.ID
+element_by_id = driver.find_element(By.ID, "element_id")
+
+# 2. By.NAME
+element_by_name = driver.find_element(By.NAME, "element_name")
+
+# 3. By.CLASS_NAME
+element_by_class = driver.find_element(By.CLASS_NAME, "element_class")
+
+# 4. By.TAG_NAME
+element_by_tag = driver.find_element(By.TAG_NAME, "tag_name")
+
+# 5. By.XPATH
+element_by_xpath = driver.find_element(By.XPATH, "//tag_name[@attribute='value']")
+
+# 6. By.CSS_SELECTOR
+element_by_css = driver.find_element(By.CSS_SELECTOR, "tag_name.attribute[value='value']")
+
+# 7. By.LINK_TEXT
+element_by_link_text = driver.find_element(By.LINK_TEXT, "Link Text")
+
+# 8. By.PARTIAL_LINK_TEXT
+element_by_partial_link_text = driver.find_element(By.PARTIAL_LINK_TEXT, "Partial Link Text")
