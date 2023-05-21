@@ -70,12 +70,7 @@ The Selenium WebDriver provides several methods to locate elements using the `By
    element = driver.find_element(By.PARTIAL_LINK_TEXT, "partial_link_text")
    ```
 
-7. **By.XPATH**: Finds the element by its XPath.
-   ```python
-   element = driver.find_element(By.XPATH, "//tag_name[@attribute='value']")
-   ```
-
-8. **By.CSS_SELECTOR**: Finds the element by its CSS selector.
+7. **By.CSS_SELECTOR**: Finds the element by its CSS selector.
    ```python
    element = driver.find_element(By.CSS_SELECTOR, "tag#id.class")
    ```
